@@ -12,5 +12,5 @@ CREATE  procedure [dbo].[_AddLogItem]
   @EventPos varchar(64),  
   @strDesc varchar(128),
   @Gold        bigint,
-  @unk int
+  @ServiceCompany int
 as
