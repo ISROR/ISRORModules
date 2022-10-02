@@ -1,0 +1,16 @@
+/****** Object:  Table [dbo].[_LogChatMessage ]    Script Date: 02-10-2022 8:51:44 AM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[_LogChatMessage ](
+    [ShardName] [varchar](50) NULL,
+    [CharName16] [varchar](50) NULL,
+    [ChatType] [varchar](50) NULL,
+    [Region] [varchar](50) NULL,
+    [Value] [varchar](max) NULL,
+    [EventTime] [datetime] NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO

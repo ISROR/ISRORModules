@@ -1,0 +1,17 @@
+/****** Object:  Table [dbo].[_LogRollBookItemPay]    Script Date: 9/30/2022 5:56:13 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[_LogRollBookItemPay](
+    [CharName] [varchar](50) NULL,
+    [EventID] [int] NULL,
+    [Level] [int] NULL,
+    [Race] [int] NULL,
+    [Gender] [int] NULL,
+    [PayItemCodeName] [varchar](128) NULL,
+    [LogDate] [datetime] NULL
+) ON [PRIMARY]
+GO

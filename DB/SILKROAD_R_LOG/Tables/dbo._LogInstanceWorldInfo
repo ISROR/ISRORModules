@@ -1,0 +1,15 @@
+/****** Object:  Table [dbo].[_LogInstanceWorldInfo]    Script Date: 10/1/2022 4:32:35 AM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[_LogInstanceWorldInfo](
+    [WorldID] [int] NOT NULL,
+    [RefTriggerCommonID] [int] NOT NULL,
+    [JID] [int] NOT NULL,
+    [StrDesc] [varchar](129) NULL,
+    [WorldCodeName128] [varchar](129) NULL
+) ON [PRIMARY]
+GO

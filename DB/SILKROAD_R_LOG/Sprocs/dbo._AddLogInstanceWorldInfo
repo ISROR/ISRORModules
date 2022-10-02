@@ -1,0 +1,20 @@
+/****** Object:  StoredProcedure [dbo].[_AddLogInstanceWorldInfo]    Script Date: 9/30/2022 9:09:12 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+-- =============================================
+-- Author:        <Author,,Name>
+-- Create date: <Create Date,,>
+-- Description:    <Description,,>
+-- =============================================
+CREATE PROCEDURE [dbo].[_AddLogInstanceWorldInfo]
+@WorldID int,
+@RefTriggerCommonID int,
+@JID int,
+@StrDesc varchar(129),
+@WorldCodeName128 varchar(129)
+AS
+     INSERT INTO _LogInstanceWorldInfo (WorldID, RefTriggerCommonID, JID, StrDesc, WorldCodeName128) VALUES (@WorldID, @RefTriggerCommonID, @JID, @StrDesc, @WorldCodeName128);

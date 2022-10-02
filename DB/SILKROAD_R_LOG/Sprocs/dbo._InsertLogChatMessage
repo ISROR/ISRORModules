@@ -1,0 +1,16 @@
+/****** Object:  StoredProcedure [dbo].[_InsertLogChatMessage]    Script Date: 02-10-2022 8:51:58 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE procedure [dbo].[_InsertLogChatMessage] 
+@ShardName        varchar(128),
+@CharName16        varchar(128),
+@ChatType        varchar(128),
+@Region        varchar(128),
+@Value        varchar(max)
+as
+begin
+    insert _LogChatMessage  select @ShardName,@CharName16,@ChatType,@Region,@Value,GETDATE();
+end
